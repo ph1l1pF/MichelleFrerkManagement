@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "michelle_frerk_management (macOS - debug)",
+        "request": "launch",
+        "type": "dart",
+        "args": ["-d", "macos"]
+      },
+      {
+        "name": "michelle_frerk_management (macOS - profile)",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "profile",
+        "args": ["-d", "macos"]
+      },
+      {
+        "name": "michelle_frerk_management (macOS - release)",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "release",
+        "args": ["-d", "macos"]
+      }
+    ]
+  }
+  
