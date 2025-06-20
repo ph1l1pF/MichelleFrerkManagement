@@ -69,13 +69,13 @@ class _PushNotificationScreenState extends State<PushNotificationScreen> {
       final url =
           'https://fcm.googleapis.com/v1/projects/$projectId/messages:send';
 
-      // We had a version where the client was listening to 'all_devices' topic, but I switches to a new topic.
-      // In order for the old clients to still receive notifications, we need to send to both topics.
+      // We had a version where the client was listening to 'all_devices' topic, but I switched to a new topic.
+      // In order for the old client versions to still receive notifications, we need to send to both topics.
 
       var testTopics = ['all_devices_test'];
       var prodTopics = [
-        'all_devices_prod' /*'all_devices'*/,
-      ]; // TODO: include second topic after release of 1.0.1
+        'all_devices_prod', 'all_devices',
+      ];
 
       var topics = isTestMode ? testTopics : prodTopics;
       List<Response> responses = [];
